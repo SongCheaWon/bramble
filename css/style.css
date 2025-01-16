@@ -12,7 +12,12 @@ ul,
 li {
   list-style: none;
 }
-
+/* INNER */
+.inner {
+  margin: auto;
+  width: calc(100% - 10%);
+  background-color: rgb(105, 172, 46);
+}
 /* 헤더 */
 .header {
   margin: auto;
@@ -86,15 +91,150 @@ li {
   font-size: 25px;
   text-transform: uppercase;
 }
-/* 비주얼 */
-.visual {
+/* VISUAL */
+.visual-slide {
   width: 100%;
-  height: 680px;
+  height: 600px;
   overflow: hidden;
-}.visual-slide li{
-    position: relative;
 }
-.visual-slide li img {
+.visual-slide .swiper-slide img {
   width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+/* EARRING */
+.earring {
+  position: relative;
+  margin: 200px 0;
+  width: 100%;
+  /* height: 700px; */
+  /* max-width: 1435px;
+  margin: auto; */
+  /* height: 740px; */
+  /* overflow: hidden; */
+}
+/* TITLE */
+.earring-title {
+  padding: 15px 0;
+}
+.earring-title a {
+  font-size: 50px;
+}
+/* PRODUCT */
+.earring-product {
+  width: 100%;
+
+  /* background-color: blue; */
+  display: flex;
+  gap: 10px;
+}
+/* Slide */
+.earring-slide {
+  width: 50%;
+  /* height: 655px; */
+  height: 46vw;
+}
+.earring-slide a {
+  width: 100%;
+  height: 100%;
+}
+.earring-slide a img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.earring-slide .swiper-pagination-bullet-active {
+  background-color: #eee;
+}
+
+/* Item */
+.earring-item {
+  position: relative;
+  width: 50%;
+  background-color: aqua;
+  /* height: 100%; */
+  /* display: flex; */
+}
+.earring-item ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.earring-item ul li {
+  width: calc((100% - 10px) / 2);
+}
+.earring-item img {
+  display: block;
+  width: 100%;
+  height: 90%;
   object-fit: contain;
 }
+.earring-item .caption{
+  width: 100%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.earring-item ul li:hover .caption{
+
+  opacity: 1;
+}
+
+/* aboutA */
+.aboutA{
+  position: relative;
+  width: 100%;
+  height: 800px;
+  margin-bottom: 200px;
+  background: url("../images/about/about1-pc.jpg")no-repeat;
+  background-size: cover;
+}
+.aboutA-txt{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.aboutA-txt h1{
+  margin: 50px 0;
+  font-size: 45px;
+}
+.aboutA-txt p{
+  font-size: 40px;
+  line-height: 1.2;
+}
+/* RING */
+.ring{
+  width: 100%;
+  height: 1000px;
+}
+.ring-inner{
+  position: relative;
+  display: block;
+}
+/* PRODUCT */
+.ring-product{
+  width: 60%;
+}
+/* .ring-product{
+  transform: scaleX(-1);
+}
+.ring-back{
+  display: block;
+  position: absolute;
+  top: -100px;right: 100px;
+  scale: 0.8;
+}
+.ring-front{
+  display: block;
+  position: absolute;
+  top:300px;right: 50px;
+} */

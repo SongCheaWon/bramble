@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- swipe css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- js -->
+    <script src="js/bramble.js"></script>
+    <!-- jquery -->
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- 헤더 -->
@@ -56,13 +63,96 @@
       </div>
     </header>
     <!-- 비주얼 -->
-    <div class="visual">
-      <ul class="visual-slide">
-        <li><img src="images/visual-slide/bramble-1.jpg" alt="bramble1" /></li>
-        <li><img src="images/visual-slide/bramble-2.jpg" alt="bramble2" /></li>
-        <li><img src="images/visual-slide/bramble-23.jpg" alt="bramble23" /></li>
-        <li><img src="images/visual-slide/bramble-16.jpg" alt="bramble16" /></li>
-      </ul>
+    <div class="swiper visual-slide">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/visual-slide/bramble-1.jpg" alt="bramble-1" /></div>
+        <div class="swiper-slide"><img src="images/visual-slide/bramble-2.jpg" alt="bramble-2" /></div>
+        <div class="swiper-slide"><img src="images/visual-slide/bramble-23.jpg" alt="bramble-23" /></div>
+        <div class="swiper-slide"><img src="images/visual-slide/bramble-16.jpg" alt="bramble-16" /></div>
+      </div>
     </div>
+    <!--EARRING -->
+    <section class="earring">
+      <div class="earring-inner inner">
+        <!-- TITLE -->
+        <div class="earring-title">
+          <a href="#"> EARRING </a>
+        </div>
+        <!-- PRODUCT -->
+        <div class="earring-product">
+          <!-- Slide -->
+          <div class="swiper earring-slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"><img src="images/earring/earring_pic (1).jpg" alt="earring1" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/earring/earring_pic (2).jpg" alt="earring2" /></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="images/earring/earring_pic (3).jpg" alt="earring3" /></a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- Item -->
+          <div class="earring-item">
+            <ul>
+              <li>
+                <a href="#"><img src="images/earring/earring_item (1).jpg" alt="earring_item1" /></a>
+                <div class="caption">
+                  <p>Blue Black Crystal Earring</p>
+                  <p>KRW 58,000</p>
+                </div>
+              </li>
+              <li>
+                <a href="#"><img src="images/earring/earring_item (2).jpg" alt="earring_item2" /></a>
+                <div class="caption">
+                  <p>Blue Black Crystal Earring</p>
+                  <p>KRW 58,000</p>
+                </div>
+              </li>
+              <li>
+                <a href="#"><img src="images/earring/earring_item (3).jpg" alt="earring_item3" /></a>
+                <div class="caption">
+                  <p>Blue Black Crystal Earring</p>
+                  <p>KRW 58,000</p>
+                </div>
+              </li>
+              <li>
+                <a href="#"><img src="images/earring/earring_item (4).jpg" alt="earring_item4" /></a>
+                <div class="caption">
+                  <p>Blue Black Crystal Earring</p>
+                  <p>KRW 58,000</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- aboutA -->
+    <section class="aboutA">
+      <div class="about-inner inner">
+        <div class="aboutA-txt">
+          <img src="images/logo_about (1).png" alt="brambleLogo" />
+          <h1>브람블 (BRAMBLE), 억새의 꽃</h1>
+          <p>
+            Bramble 은 깨달음과 경험, 감각을 기준으로<br />
+            예술적 가치가 있는 디자인에 도달하는 것이 목표입니다.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- RING -->
+    <section class="ring">
+      <div class="ring-inner inner">
+        <!-- PRODUCT -->
+        <img src="images/ring/ring-product.jpg" class="ring-product" />
+
+        <!-- <img src="images/ring/ring-back.jpg" alt="ring1" class="ring-back" />
+          <img src="images/ring/ring-front.jpg" alt="ring1" class="ring-front" /> -->
+      </div>
+    </section>
   </body>
 </html>
