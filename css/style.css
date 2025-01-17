@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,11 +13,14 @@ ul,
 li {
   list-style: none;
 }
+html {
+  font-size: 10px;
+}
 /* INNER */
 .inner {
   margin: auto;
   width: calc(100% - 10%);
-  background-color: rgb(105, 172, 46);
+  /* background-color: rgb(105, 172, 46); */
 }
 /* 헤더 */
 .header {
@@ -40,7 +44,7 @@ li {
 }
 /* 메뉴 */
 .menu span {
-  font-size: 25px;
+  font-size: 2.5rem;
   cursor: pointer;
 }
 
@@ -52,14 +56,17 @@ li {
   height: 400px;
   gap: 2px;
   display: flex;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.5;
   background-color: rgba(255, 255, 255, 0.5);
-  display: none;
+  z-index: 9;
+  /* display: none; */
 }
 .menu-list::before {
   position: absolute;
   left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   content: "";
   width: 2px;
   height: 360px;
@@ -88,7 +95,7 @@ li {
   width: 300px;
   display: flex;
   justify-content: space-between;
-  font-size: 25px;
+  font-size: 2.5rem;
   text-transform: uppercase;
 }
 /* VISUAL */
@@ -106,7 +113,7 @@ li {
 /* EARRING */
 .earring {
   position: relative;
-  margin: 200px 0;
+  margin: 100px 0 200px 0;
   width: 100%;
   /* height: 700px; */
   /* max-width: 1435px;
@@ -119,7 +126,7 @@ li {
   padding: 15px 0;
 }
 .earring-title a {
-  font-size: 50px;
+  font-size: 5rem;
 }
 /* PRODUCT */
 .earring-product {
@@ -153,7 +160,7 @@ li {
 .earring-item {
   position: relative;
   width: 50%;
-  background-color: aqua;
+  /* background-color: aqua; */
   /* height: 100%; */
   /* display: flex; */
 }
@@ -167,74 +174,218 @@ li {
 }
 .earring-item ul li {
   width: calc((100% - 10px) / 2);
+  /* 높이 주기 */
+  height: calc(50% -5px);
+}
+.earring-item ul li a {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .earring-item img {
   display: block;
   width: 100%;
-  height: 90%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  /* object-fit: contain; */
 }
-.earring-item .caption{
+.earring-item .caption {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 90%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   color: #fff;
+  padding: 45% 0;
+  font-size: 3rem;
   opacity: 0;
   transition: all 0.5s;
 }
-.earring-item ul li:hover .caption{
-
+.earring-item ul li:hover .caption {
   opacity: 1;
 }
 
 /* aboutA */
-.aboutA{
+.aboutA {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 41.6vw;
   margin-bottom: 200px;
-  background: url("../images/about/about1-pc.jpg")no-repeat;
-  background-size: cover;
+  /* background: url("../images/about/about1-pc.jpg") no-repeat;
+  background-size: cover; */
 }
-.aboutA-txt{
+/* aboutA 배경이미지 */
+.aboutA-pc {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.aboutA-tablet,
+.aboutA-mobile {
+  display: none;
+}
+.aboutA-txt {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
 }
-.aboutA-txt h1{
+.aboutA-txt h1 {
   margin: 50px 0;
-  font-size: 45px;
+  font-size: 4.5rem;
 }
-.aboutA-txt p{
-  font-size: 40px;
+.aboutA-txt p {
+  font-size: 4rem;
   line-height: 1.2;
 }
 /* RING */
-.ring{
+.ring {
   width: 100%;
   height: 1000px;
+  margin-bottom: 200px;
 }
-.ring-inner{
-  position: relative;
-  display: block;
+.ring-inner {
+  display: flex;
+  height: 100%;
 }
-/* PRODUCT */
-.ring-product{
+.ring-product {
   width: 60%;
+  height: 54vw;
 }
-/* .ring-product{
-  transform: scaleX(-1);
+.ring-viewMore {
+  position: relative;
+  /* text-align: center; */
+  width: 40%;
+  height: 100%;
+  /* background-color: aquamarine; */
 }
-.ring-back{
-  display: block;
+.ring-viewMore h1 {
   position: absolute;
-  top: -100px;right: 100px;
-  scale: 0.8;
+  top: 25%;
+  right: 50%;
+  transform: translate(50%, -25%);
+  font-weight: normal;
+  font-size: 10rem;
+  letter-spacing: 10rem;
+  text-indent: 10rem;
+  z-index: 1;
 }
-.ring-front{
-  display: block;
+.ring-img {
+  width: 100%;
+  height: 54vw;
   position: absolute;
-  top:300px;right: 50px;
-} */
+  top: 10%;
+  left: 0;
+}
+button.viewMore {
+  width: 75%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 40px 0;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  text-indent: 1rem;
+  color: #000000;
+  font-weight: normal;
+  background-color: #fff;
+  border: 0.1rem solid #000000;
+  border-radius: 0.4rem;
+  transition: all 0.3s;
+}
+button.viewMore:active {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* acc */
+.acc {
+  width: 100%;
+  height: 960px;
+  margin-bottom: 200px;
+}
+.acc-inner {
+  width: 100%;
+  display: flex;
+}
+/* necklace */
+.necklace {
+  width: 50%;
+  background-color: #f4f4f4;
+}
+.necklace ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.necklace ul li {
+  width: 50%;
+  height: 50%;
+}
+.necklace ul li {
+  position: relative;
+}
+.necklace ul li a img {
+  display: block;
+  width: 100%;
+}
+.necklace ul li a p {
+  position: absolute;
+  bottom: 10%;
+  right: 2%;
+  font-size: 5rem;
+}
+/* keyring */
+.keyring {
+  width: 50%;
+  background-color: #f4f4f4;
+}
+.keyring ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.keyring ul li {
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+.keyring ul li img {
+  display: block;
+  width: 100%;
+}
+.keyring ul li a p {
+  position: absolute;
+  bottom: 10%;
+  left: 2%;
+  font-size: 5rem;
+}
+/* 상품정보 */
+.acc-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  color: #000000;
+  font-size: 2rem;
+}
+
+/* aboutB */
+.aboutB {
+  width: 100%;
+  height: 41.6vw;
+  margin-bottom: 200px;
+  overflow: hidden;
+}
+.aboutB img {
+  width: 100%;
+  object-fit: cover;
+}
