@@ -60,9 +60,10 @@ html {
   line-height: 1.5;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 9;
-  /* display: none; */
+  opacity: 0;
+  transition: all 0.1s;
 }
-.menu-list::before {
+.menu-list::after {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -81,7 +82,7 @@ html {
   padding: 15px;
 }
 .menu span:hover + .menu-list {
-  display: block;
+  opacity: 1;
 }
 /* 로고 */
 .logo {
@@ -377,16 +378,15 @@ button.viewMore:active {
   text-align: center;
   color: #000000;
   font-size: 2.5rem;
-opacity: 0;
+  opacity: 0;
   transition: all 0.5s;
 }
-.necklace li:hover .acc-caption{
-opacity: 1;
+.necklace li:hover .acc-caption {
+  opacity: 1;
 }
-.keyring li:hover .acc-caption{
-opacity: 1;
+.keyring li:hover .acc-caption {
+  opacity: 1;
 }
-
 
 /* aboutB */
 .aboutB {
@@ -448,12 +448,49 @@ opacity: 1;
 .aboutB-txt {
   font-size: 2.5rem;
 }
-.aboutB-txt h1{
+.aboutB-txt h1 {
   font-weight: 500;
   margin-bottom: 5%;
   color: #fff;
 }
-.aboutB-txt p{
+.aboutB-txt p {
   color: #fff;
   white-space: nowrap;
+}
+
+/* REVIEW */
+.review {
+  width: 100%;
+  padding-left: 5%;
+  margin-bottom: 200px;
+}
+.review h1 {
+  font-size: 5.5rem;
+  font-weight: normal;
+  padding-bottom: 1%;
+  letter-spacing: 2rem;
+}
+.review-content {
+  width: 100%;
+  height: 40.5vw;
+  border: 1px solid #5f5f5f;
+}
+.review-content img{
+  width: 100%;
+  height: 32.8vw;
+  object-fit: cover;
+}
+.review-txt{
+  padding: 15px;
+  font-size: 2rem;
+}
+.review-txt .nickname{
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+/* footer */
+.footer{
+  width: 100%;
+  height: 820px;
+  background-color: #000000;
 }
