@@ -26,4 +26,14 @@ window.onload = function () {
     spaceBetween: 30,
     freeMode: true,
   });
+
+  // go to top
+  const topBtn = document.querySelector(".top-btn");
+  topBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+
 };

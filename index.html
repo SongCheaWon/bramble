@@ -32,47 +32,54 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css" />
     <!-- swipe css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- js -->
-    <script src="js/swipe.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
   </head>
   <body>
+    <!-- go to top -->
+    <div class="top-btn">
+      <i class="fa-solid fa-chevron-up"></i>
+    </div>
     <!-- 헤더 -->
     <header class="header">
       <div class="header-inner">
         <!-- 메뉴 -->
         <div class="menu">
           <span>MENU</span>
-          <div class="menu-list">
-            <ul class="menu-product">
-              <li><a href="#">RING</a></li>
-              <li><a href="#">KEYRING</a></li>
-              <li><a href="#">EARRING</a></li>
-              <li><a href="#">NECKLACE</a></li>
-              <li><a href="#">BRACELET</a></li>
-              <li><a href="#">B.R.B</a></li>
-              <li><a href="#">CONTRA</a></li>
-              <li><a href="#">REVOLVE</a></li>
-              <li><a href="#">MAGNETIC</a></li>
-              <li><a href="#">SNAKE CAVE</a></li>
-              <li><a href="#">PEARL IN THE WAVE</a></li>
-              <li><a href="#">EXPRESSION & THINK</a></li>
-            </ul>
-            <ul class="menu-etc">
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">LOOKBOOK</a></li>
-              <li><a href="#">PRESS</a></li>
-              <li><a href="#">NOTICE</a></li>
-              <li><a href="#">Q&A</a></li>
-              <li><a href="#">REVIEW</a></li>
-            </ul>
-          </div>
+            <div class="menu-list">
+              <ul class="menu-product">
+                <li><a href="#">RING</a></li>
+                <li><a href="#">KEYRING</a></li>
+                <li><a href="#">EARRING</a></li>
+                <li><a href="#">NECKLACE</a></li>
+                <li><a href="#">BRACELET</a></li>
+                <li><a href="#">B.R.B</a></li>
+                <li><a href="#">CONTRA</a></li>
+                <li><a href="#">REVOLVE</a></li>
+                <li><a href="#">MAGNETIC</a></li>
+                <li><a href="#">SNAKE CAVE</a></li>
+                <li><a href="#">PEARL IN THE WAVE</a></li>
+                <li><a href="#">EXPRESSION & THINK</a></li>
+              </ul>
+              <ul class="menu-etc">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">LOOKBOOK</a></li>
+                <li><a href="#">PRESS</a></li>
+                <li><a href="#">NOTICE</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">REVIEW</a></li>
+              </ul>
+            </div>
         </div>
         <!-- 로고 -->
         <a href="#" class="logo"><img src="images/logo_black.png" alt="bramble logo" /></a>
@@ -321,7 +328,7 @@
           </div>
           <div class="swiper-slide">
             <div class="review-content">
-              <img src="images/earring/earring_pic (1).jpg" alt="" />
+              <img src="images/keyring/keyring (2).jpg" alt="" />
               <div class="review-txt">
                 <p class="nickname">NICKNAME</p>
                 <p>진짜 예뻐요. 어떤 옷에도 잘 어울리고, 포인트가 되어줘서 마음에 듭니다.</p>
@@ -358,6 +365,26 @@
         </div>
       </div>
     </section>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer-inner">
+        <!-- logo -->
+        <img src="images/logo_white.png" alt="" />
+        <!-- insta -->
+        <span><a target="_blank" href="https://www.instagram.com/bramble.official/">▷INSTAGRAM</a></span>
+        <!-- cs -->
+        <div class="cs">
+          <p>
+            c/s<br />
+            010-3625-1819<br />
+            MON - FRI : 12PM - 7PM
+          </p>
+          <p>
+            bank<br />
+            하나 174-910519-13307
+          </p>
+          <p>예금주 : 강한나</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
