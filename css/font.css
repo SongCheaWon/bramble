@@ -1,0 +1,22 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'SUIT';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT.woff2') format('woff2');
+
+}
+body{
+    font-weight: 100;
+}
+
+.aboutA, .aboutB{
+    font-family: 'SUIT';
+}
+.aboutA-txt h1{
+    font-weight: 500;
+    letter-spacing:-3px;
+}
+.aboutA-txt p{
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing:-3px;
+}

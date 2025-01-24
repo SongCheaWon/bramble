@@ -22,9 +22,18 @@ window.onload = function () {
   });
   // review
   var swiper = new Swiper(".review-slide", {
-    slidesPerView: 3.4,
+    slidesPerView: 1.7,
     spaceBetween: 30,
     freeMode: true,
+  
+    breakpoints: {
+      768: {
+        slidesPerView: 2.6,
+      },
+      1900: {
+        slidesPerView: 3.4,
+      },
+    },
   });
 
   // go to top
@@ -35,5 +44,4 @@ window.onload = function () {
       behavior: "smooth",
     });
   });
-
 };
