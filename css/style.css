@@ -15,7 +15,8 @@ li {
   list-style: none;
 }
 html {
-  font-size: 10px;
+  font-size: 7.5px;
+  color: #333
 }
 /* go to top */
 .top-btn {
@@ -79,8 +80,8 @@ html {
   height: 400px;
   gap: 2px;
   display: flex;
-  font-size: 2rem;
-  line-height: 1.5;
+  font-size: 2.5rem;
+  line-height: 1.65;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 9;
   /* opacity: 0; */
@@ -127,7 +128,7 @@ html {
 }
 /* 마이페이지 */
 .mypage-menu {
-  width: 300px;
+  width: 220px;
   display: flex;
   justify-content: space-between;
   font-size: 2.5rem;
@@ -239,8 +240,9 @@ html {
 }
 .earring-item .caption {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -277,7 +279,7 @@ html {
 .aboutA-txt {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 15%;
   transform: translateY(-50%);
   text-align: center;
 }
@@ -286,11 +288,13 @@ html {
 }
 .aboutA-txt h1 {
   margin: 50px 0 30px 0;
-  font-size: 4rem;
+  letter-spacing: 0.01px;
+  font-size: 3.5rem;
 }
 .aboutA-txt p {
   font-size: 3rem;
   line-height: 1.2;
+  letter-spacing: 0.1px;
 }
 /* RING */
 .ring {
@@ -401,7 +405,8 @@ button.viewMore:active {
 }
 .necklaceline {
   position: absolute;
-  bottom: 40px;
+  height: 0.5rem;
+  bottom: 8%;
   right: -100%;
   opacity: 0;
   /* animation: neckline linear 1s */
@@ -469,7 +474,8 @@ button.viewMore:active {
 }
 .keyringline {
   position: absolute;
-  bottom: 40px;
+  height: 0.5rem;
+  bottom: 8%;
   left: -100%;
   opacity: 0;
 }
@@ -519,7 +525,7 @@ button.viewMore:active {
   background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
   color: #000000;
-  font-size: 2.5rem;
+  font-size: 3rem;
   opacity: 0;
   transition: all 0.5s;
 }
@@ -575,13 +581,15 @@ button.viewMore:active {
 }
 .aboutB-logoB {
   width: 15%;
-  min-width: 100px;
+  min-width: 50px;
   display: flex;
   justify-content: center;
   /* background-color: aqua; */
 }
 .aboutB-logoB img {
+  display: block;
   width: 100%;
+  
 }
 .aboutB-caption {
   width: 55%;
@@ -639,8 +647,8 @@ button.viewMore:active {
 .review-content {
   width: 100%;
   /* height: 42vw; */
-  border-radius: 3px;
-  border: 1px solid #9e9e9e;
+  border-radius: 2px;
+  border: 1px solid #454545;
 }
 .review-content img {
   width: 100%;

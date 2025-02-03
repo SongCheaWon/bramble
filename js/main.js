@@ -20,17 +20,19 @@ window.onload = function () {
       el: ".swiper-pagination",
     },
   });
+  // earring item swipe
+
   // review
   var swiper = new Swiper(".review-slide", {
-    slidesPerView: 1.7,
+    slidesPerView: 1.9,
     spaceBetween: 30,
     freeMode: true,
   
     breakpoints: {
-      768: {
+      550: {
         slidesPerView: 2.6,
       },
-      1900: {
+      1400: {
         slidesPerView: 3.4,
       },
     },

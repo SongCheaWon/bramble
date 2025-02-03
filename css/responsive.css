@@ -2,19 +2,12 @@
 
 /* 노트북 */
 @media screen and (max-width: 1400px) {
-  html {
-    font-size: 8px;
-  }
-  /* 헤더 */
-  .menu-list {
-    height: 330px;
-  }
-  .menu-list::after {
-    height: 300px;
-  }
   /* aboutA */
   .aboutA-txt img {
     width: 150px;
+  }
+  button.viewMore {
+    padding: 8% 0;
   }
   .aboutB-logoB {
     width: 14%;
@@ -25,43 +18,63 @@
   }
 }
 @media screen and (max-width: 1160px) {
-    .aboutB-txt h1{
-        font-size: 3rem;
-    }
-    .aboutB-txt p{
-        font-size: 2rem;
-    }
+  html {
+    font-size: 6.2px;
+  }
+  /* 헤더 */
+  .menu-list {
+    width: 504px;
+    height: 330px;
+  }
+  .menu-list::after {
+    height: 300px;
+  }
+  .aboutB-txt h1 {
+    font-size: 3rem;
+  }
+  .aboutB-txt p {
+    font-size: 2rem;
+  }
+  .footer {
+    height: 35vw;
+  }
 }
 @media screen and (max-width: 1024px) {
-    html {
-        font-size: 6px;
-      }
-      .menu span {
-        font-size: 3rem;
-    }
-      .mypage-menu {
-        width: 200px;
-        font-size: 3rem;
-      }
-      .menu-list{
-        width: 500px;
-        font-size: 2.7rem;
-      }
-    .aboutA-txt img {
-        width: 100px;
-    }
-    .aboutB-txt h1{
-        font-size: 3.5rem;
-    }
-    .aboutB-txt p{
-        font-size: 2.5rem;
-    }
-
-}
-@media screen and (max-width: 950px) {
-    button.viewMore {
-        padding: 8% 0;
-      }    
+  html {
+    font-size: 6px;
+  }
+  .mypage-menu {
+    width: 200px;
+    font-size: 3rem;
+  }
+  .menu span {
+    font-size: 3rem;
+  }
+  .menu-list {
+    width: 490px;
+    height: 320px;
+  }
+  .menu-list::after {
+    height: 290px;
+  }
+  .aboutA-txt img {
+    width: 100px;
+  }
+  .earring-item .caption {
+    font-size: 2.3rem;
+  }
+  .aboutB {
+    height: 55vw;
+  }
+  .aboutB-txt h1 {
+    font-size: 3.5rem;
+  }
+  .aboutB-txt p {
+    font-size: 2.5rem;
+  }
+  .footer {
+    height: 45vw;
+  }
 }
 /* 태블릿 */
 @media screen and (max-width: 768px) {
@@ -78,16 +91,34 @@
     width: 150px;
   }
   .menu-list {
-    width: 300px;
-    height: 230px;
+    width: 350px;
+    height: 265px;
     top: 80px;
-    font-size: 2.5rem;
   }
   .menu-list::after {
-    height: 200px;
+    height: 235px;
   }
   .logo {
     height: 80px;
+  }
+  .earring-slide {
+    width: 70%;
+    height: 76vw;
+  }
+  .earring-item {
+    width: 30%;
+  }
+  .earring-item ul {
+    height: 76vw;
+    overflow-x: auto;
+    display: block;
+    /* flex-direction: column; */
+    /* align-items: flex-end; */
+  }
+  .earring-item ul li {
+    width: 100%;
+    /* 높이 주기 */
+    height: calc(50% -5px);
   }
   .aboutA {
     height: 65vw;
@@ -100,19 +131,134 @@
     object-fit: cover;
     display: block;
   }
+  .aboutA-txt {
+    left: 8%;
+  }
   .aboutA-txt img {
     width: 100px;
   }
-  .aboutA-txt h1 {
+  /* .aboutA-txt h1 {
     font-size: 24px;
   }
   .aboutA-txt p {
     font-size: 16px;
+  } */
+  .ring {
+    height: 123vw;
+    overflow: hidden;
   }
-
+  .ring-inner {
+    flex-direction: column;
+  }
+  .ring-product {
+    width: 100%;
+    height: 100%;
+  }
+  .ring-viewMore {
+    width: 100%;
+  }
+  .ring-viewMore h1 {
+    top: 17%;
+    right: 25%;
+    font-size: 6.5vw;
+    letter-spacing: 6.5vw;
+    text-indent: 6.5vw;
+  }
+  button.viewMore {
+    width: 45%;
+    bottom: 54%;
+    left: 75%;
+    padding: 4% 0;
+  }
+  .ring-img {
+    width: 50%;
+    position: absolute;
+    top: -20%;
+    left: 0;
+  }
+  .necklaceline {
+    display: none;
+  }
+  .aboutB {
+    height: 55vw;
+  }
+  .footer {
+    height: 65vw;
+  }
+  .footer-inner img {
+    width: 10%;
+  }
+  .cs {
+    font-size: 3rem;
+  }
 }
+
 /* 삼성 */
 @media screen and (max-width: 420px) {
+  .visual-slide {
+    height: 400px;
+  }
+  .earring-slide {
+    width: 55%;
+  }
+  .earring-item {
+    width: 45%;
+  }
+  .aboutA {
+    height: 130vw;
+  }
+  .aboutA-tablet {
+    display: none;
+  }
+  .aboutA-mobile {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .aboutA-txt {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    text-align: center;
+  }
+  .aboutA-txt img {
+    width: 70px;
+  }
+  .aboutA-txt h1 {
+    margin: 30px 0 20px 0;
+    font-size: 3rem;
+  }
+  .aboutA-txt p {
+    font-size: 2.8rem;
+    white-space: nowrap;
+  }
+  .acc {
+    height: 200vw;
+  }
+  .acc-inner {
+    flex-direction: column;
+  }
+  .necklace {
+    width: 100%;
+  }
+  .keyring {
+    width: 100%;
+  }
+  .aboutB {
+    height: 80vw;
+  }
+  button.viewMore {
+    padding: 3% 0;
+  }
+  .aboutB-logo img {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .footer {
+    height: 80vw;
+  }
 }
 /* 아이폰 */
 @media screen and (max-width: 320px) {
