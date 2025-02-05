@@ -176,9 +176,6 @@
     top: -20%;
     left: 0;
   }
-  .necklaceline {
-    display: none;
-  }
   .aboutB {
     height: 55vw;
   }
@@ -192,9 +189,38 @@
     font-size: 3rem;
   }
 }
-
-/* 삼성 */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 640px) {
+  .acc-caption {
+    font-size: 10.8px;
+  }
+  .necklace .acc-title, .keyring .acc-title{
+    font-size: 5rem;
+  }
+  .review-txt p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+/* 삼성 420 */
+@media screen and (max-width: 480px) {
+  .mypage-menu {
+    width: 47px;
+  }
+  .mypage {
+    display: flex;
+    align-items: center;
+  }
+  .mypage-menu li:first-child {
+    display: block;
+  }
+  .mypage-menu li {
+    display: none;
+  }
+  #mypage-mobile {
+    display: block;
+    font-size: 16px;
+  }
   .visual-slide {
     height: 400px;
   }
@@ -233,11 +259,17 @@
     font-size: 2.8rem;
     white-space: nowrap;
   }
+  button.viewMore {
+    padding: 3% 0;
+  }
   .acc {
     height: 200vw;
   }
   .acc-inner {
     flex-direction: column;
+  }
+  .necklace .acc-title, .keyring .acc-title{
+    font-size: 6rem;
   }
   .necklace {
     width: 100%;
@@ -245,21 +277,101 @@
   .keyring {
     width: 100%;
   }
+  .keyringline, .necklaceline{
+    display: none;
+  }
+  .necklace ul li a {
+    display: block;
+   width:  100%;
+    height:48vw;
+  }
+  .keyring ul li a {
+    display: block;
+   width:  100%;
+    height:48vw;
+  }
+  .acc-caption {
+    font-size: 3rem;
+  }
   .aboutB {
-    height: 80vw;
+    height: 90vw;
   }
-  button.viewMore {
-    padding: 3% 0;
+  .aboutB img {
+    width: 120%;
   }
-  .aboutB-logo img {
-    top: 0;
-    left: 50%;
+
+  .aboutB-logo {
+    width: 13%;
+    top: 25%;
+    left: 48%;
     transform: translate(-50%, 0);
+  }
+  .aboutB-caption {
+    top: 70%;
+    transform: translateY(-70%);
+  }
+  .aboutB-caption img {
+    min-width: 45px;
+    width: 95%;
+  }
+
+  .about-creativity,
+  .about-durability {
+    gap: 5%;
+  }
+  .aboutB-txt p {
+    white-space: nowrap;
+  }
+  .aboutB-txt h1 {
+    margin-bottom: 2%;
   }
   .footer {
     height: 80vw;
   }
+  .footer img {
+    min-width: 50px;
+  }
+  .footer span {
+    font-size: 12px;
+  }
+  .cs {
+    font-size: 12px;
+  }
+  .cs-bank {
+    display: block;
+  }
+
 }
+
+@media screen and (max-width: 420px) {
+  .aboutB-txt p {
+    font-size: 10px;
+  }
+}
+
 /* 아이폰 */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 390px) {
+  .menu-list {
+    width: 300px;
+  }
+  .aboutA-txt p {
+    font-size: 2.5rem;
+  }
+  .aboutB-txt h1 {
+    font-size: 3rem;
+  }
+  .aboutB-txt p {
+    font-size: 9px;
+  }
+  .aboutB-caption {
+    left: 7%;
+  }
+  .aboutB-caption img {
+    min-width: 39px;
+    width: 75%;
+  }
+  .about-creativity,
+  .about-durability {
+    gap: 1%;
+  }
 }
